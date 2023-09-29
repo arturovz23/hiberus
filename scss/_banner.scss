@@ -1,0 +1,35 @@
+.banner{
+    background: $secundary-color;
+    height: 210px;
+    padding: 65px 0;
+    @include mobile{
+        height: 110px;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+    &__h2{
+        font-family: $primary-font;
+        font-size: 65px;
+        color: #fefefe;
+        white-space: nowrap;
+        padding: 0 40px;
+        animation: RightToLeft 10s infinite linear;
+
+        @include mobile{
+            font-size: 36px;
+        }
+    }
+
+    @keyframes RightToLeft {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+}

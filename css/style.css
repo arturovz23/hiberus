@@ -257,4 +257,41 @@ a {
   width: 654px;
 }
 
+.banner {
+  background: linear-gradient(90deg, rgb(3, 115, 134) 0%, rgb(3, 141, 144) 60%);
+  height: 210px;
+  padding: 65px 0;
+}
+@media (max-width: 767px) {
+  .banner {
+    height: 110px;
+  }
+}
+.banner__container {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.banner__h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 65px;
+  color: #fefefe;
+  white-space: nowrap;
+  padding: 0 40px;
+  animation: RightToLeft 10s infinite linear;
+}
+@media (max-width: 767px) {
+  .banner__h2 {
+    font-size: 36px;
+  }
+}
+@keyframes RightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
