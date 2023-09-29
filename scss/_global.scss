@@ -21,7 +21,8 @@ $secundary-font: 'Lato', sans-serif;
 }
 
 body{
-    background-color: $base-uno;
+    background-color: $base-uno !important;
+    padding: 80px 0px 0px;
 }
 
 ul{
