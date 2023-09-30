@@ -1,0 +1,86 @@
+.contacto{
+    background: #222222;
+    display: flex;
+    @include tablet{
+        align-items: center;
+        flex-direction: column;
+    }
+    @include mobile{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__img-content{
+        width: 960px;
+        background-image: url(../img/img_reik_formulario.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include tablet{
+            width: 100%;
+            height: 360px;
+        }
+        @include mobile{
+            width: 100%;
+            height: 360px;
+        }
+    }
+    &__text-content{
+        width: 960px;
+        padding: 100px 60px 100px 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include tablet{
+            width: 768px;
+            padding: 100px 30px 100px 30px;
+        }
+        @include mobile{
+            width: 375px;
+            padding: 100px 10px 100px 10px;
+        }
+    }
+    &__descripcion{
+        width: auto;
+    }
+    &__h2{
+        color: $primary-color;
+    }
+    &__p{
+        color: $primary-color;
+        font-size: 24px;
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+    &__campos{
+        .form{
+            .form-group{
+                padding-bottom: 30px;
+            }
+    
+            &__label{
+                color: $primary-color;
+                font-size: 20px;
+            }
+    
+            &__btn{
+                background: #222222;
+                font-weight: 600;
+                color: $highlight-color;
+                padding: 8px 16px;
+                border: 1px solid $highlight-color;
+                border-radius: 6px;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                &:hover{
+                    background: $highlight-color;
+                    color: $secundary-color;
+                }
+            }
+            .text-muted{
+                color: $primary-color !important;
+            }
+        }
+    }
+    
+}

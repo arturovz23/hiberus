@@ -1,0 +1,65 @@
+.footer{
+    background-color: $secundary-color;
+    padding: 100px 0;
+
+    &__img{
+        width: 135px;
+    }
+
+    &__ul{
+        display: flex;
+        align-items: center;
+        @include mobile{
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    &__ul--social{
+        @include mobile{
+            flex-direction: row;
+        }
+    }
+    &__li{
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 10px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+    &__li--social{
+        margin: 0 25px;
+
+        @include mobile{
+            margin: 0 10px;
+        }
+    }
+    &__a{
+        color: $primary-color;
+        padding: 8px 12px;
+        text-transform: uppercase;
+    }
+    &__icon{
+        color: $primary-color;
+        font-size: 40px;
+        &:hover{
+            color: $highlight-color;
+        }
+    }
+    &__span{
+        color: $primary-color;
+    }
+    &__a--privacidad{
+        color: $highlight-color;
+    }
+    &__hr{
+        background-color: $primary-color;
+        height: 2px;
+        border: none;
+        opacity: 100;
+    }
+    &__aling{
+        display: flex;
+        justify-content: center;
+        padding: 0 0 50px;
+    }
+}

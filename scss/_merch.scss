@@ -1,0 +1,75 @@
+.merch{
+    padding: 150px 0;
+
+    @include mobile{
+        padding: 100px 0;
+    }
+
+    &__h2{
+        color: $secundary-color;
+        padding: 0 0 50px;
+        text-transform: uppercase;
+        @include mobile{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__card{
+        background: $secundary-color !important;
+        @include tablet{
+            padding-bottom: 50px;
+        }
+        @include mobile{
+            padding-bottom: 50px;
+        }
+        
+    }
+    &__h2--card{
+        color: $primary-color;
+        text-transform: uppercase;
+        @include tablet {
+            margin-top: 50px;
+        }
+        @include mobile {
+            margin-top: 50px;
+        }
+        
+    }
+
+    &__p{
+        color: $primary-color;
+        font-size: 24px;
+        padding: 0 0 16px;
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+
+    &__btn{
+        background: $secundary-color;
+        color: $highlight-color;
+        font-weight: 600;
+        padding: 8px 16px;
+        border: 1px solid $highlight-color;
+        border-radius: 6px;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &:hover{
+            background: $highlight-color;
+            color: $secundary-color;
+        }
+    }
+
+    &__row{
+        gap: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__align{
+        padding: 0 50px !important;
+        @include mobile {
+            padding: 0 10px !important;
+        }
+    }
+}

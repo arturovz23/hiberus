@@ -1,10 +1,13 @@
 @import 'mediaquery';
 
 /* COLORS LIGTH */
-$primary-color: #037185;
-$secundary-color: linear-gradient(90deg, rgba(3,115,134,1) 0%, rgba(3,141,144,1) 60%);
-$base-uno: #F0E9E5;
-$base-dos: #1a1a1a;
+$primary-color: #F0F0F0;
+$secundary-color: #000000;
+$highlight-color: #F7BF53;
+$gradiant: linear-gradient(40deg, rgba(240,240,240,1) 0%, rgba(210,210,210,1) 55%);
+
+/* COLORS HOVER */
+$hover-btn-card: #d7a53a;
 
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
@@ -21,8 +24,16 @@ $secundary-font: 'Lato', sans-serif;
 }
 
 body{
-    background-color: $base-uno !important;
+    background-color: $primary-color !important;
     padding: 80px 0px 0px;
+}
+
+h2{
+    font-family: $primary-font;
+    font-size: 65px !important;
+    @include mobile{
+        font-size: 32px !important;
+    }
 }
 
 ul{
@@ -37,4 +48,23 @@ li{
 
 a{
     text-decoration: none;
+}
+
+/* ANIMACIONES WEB */
+.animation{
+    opacity: 0;
+    transition: .7s ease-in-out all;
+}
+.animation.left{
+    transform: translateX(-100px);
+}
+.animation.right{
+    transform: translateX(100px);
+}
+.animation.up{
+    transform: translateY(100px);
+}
+.animation.visible{
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
 }

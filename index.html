@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo musical REIK</title>
+    <!-- meta tags sociales -->
+    <meta property="og:title" content="Grupo musical Reik">
+    <meta property="og:description" content="Pagina oficial para venta de discos del grupo Reik">
+    <meta property="og:type" content="website">
+
     <!-- HOJA DE ESTILOS -->
+    <link rel="icon" href="img/disco-reik.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Grupo musical REIK</title>
+    
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/46753c53dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!-- NAVBAR -->
-<header class="header">
+<!-- navbar -->
+<header class="header fixed-top">
     <div class="container">
         <nav class="nav">
-            <a href="#" class="nav__logo">REIK</a>
+            <a href="#" class="nav__logo"><img src="img/logo vector blanco 1.webp" alt="logo de grupo reik" class="nav__img"></a>
             <button class="nav__toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
             <ul class="nav__ul">
                 <li class="nav__li"><a href="#" class="nav__a">Inicio</a></li>
-                <li class="nav__li"><a href="#" class="nav__a">Discos</a></li>
-                <li class="nav__li"><a href="#" class="nav__a">Merch</a></li>
-                <li class="nav__li"><a href="#" class="nav__a">Contacto</a></li>
+                <li class="nav__li"><a href="#discos" class="nav__a">Discos</a></li>
+                <li class="nav__li"><a href="#merch" class="nav__a">Merch</a></li>
+                <li class="nav__li"><a href="#contacto" class="nav__a">Contacto</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<section class="hero">
+<!-- seccion Hero -->
+<section class="hero" id="hero">
     <div class="container">
         <div class="row hero__row">
           <div class="col-12 col-md-12 col-lg-6">
             <h1 class="hero__h1">El Grupo Musical #1 de México en el Mundo del Pop</h1>
-            <button type="button" class="hero__button">Escucha su ultimo sencillo en Youtubes <span><i class="fa-brands fa-youtube hero__icon"></i></span></button>
+            <a class="hero__btn" href="https://www.youtube.com/watch?v=msOFw9tegxI&ab_channel=reikVEVO" target="_blank" aria-label="ir a canal youtube">Escucha su ultimo sencillo en Youtubes <span><i class="fa-brands fa-youtube hero__icon"></i></span></a>
           </div>
           <div class="col-12 col-md-12 col-lg-6">
-            <img src="img/img hero.webp" alt="" class="hero__img img-fluid">
+            <img src="img/img hero.webp" alt="imagen principal reik" class="hero__img img-fluid">
           </div>
       </div>
     </div>
 </section>
+<!-- seccion banner -->
 <section class="banner">
     <div class="banner__container">
         <h2 class="banner__h2">PROXIMO CONCIERTO EN cdmx | Auditorio Nacional | 15 OCT</h2>
@@ -47,10 +57,196 @@
         <h2 class="banner__h2">PROXIMO CONCIERTO EN cdmx | Auditorio Nacional | 15 OCT</h2>
     </div>
 </section>
-
+<!-- seccion discos -->
+<section class="discos" id="discos">
+    <div class="container">
+        <div class="row discos__row">
+            <div class="col-12 col-md-12 col-lg-12 ">
+                <h2 class="discos__h2">Discos más vendidos</h2>
+            </div>
+        </div>
+        <div class="row row-gap-4">
+            <div class="col-12 col-md-6 col-lg-4 discos__col">
+                <div class="card animation left" id="card1">
+                    <img src="img/album_ahora.webp" class="card-img-top card__img" alt="album ahora">
+                    <div class="card-body card__content">
+                      <h5 class="card-title card__h5">$600 MXN</h5>
+                      <p class="card-text card__p">2019 - 9 canciones, 32 min 10 segundos</p>
+                    </div>
+                    <div class="card-body card__buttons">
+                        <button class="card__button" aria-label="ver mas"><i class="fa-regular fa-square-plus"></i></button>
+                        <a href="#" class="btn button card__a" aria-label="ir a compra">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 discos__col">
+                <div class="card animation up" id="card2">
+                    <img src="img/album_amor.webp" class="card-img-top card__img" alt="album amor">
+                    <div class="card-body card__content">
+                      <h5 class="card-title card__h5">$500 MXN</h5>
+                      <p class="card-text card__p">2016 - 11 canciones, 37 min 28 segundos</p>
+                    </div>
+                    <div class="card-body card__buttons">
+                        <button class="card__button" aria-label="ver mas"><i class="fa-regular fa-square-plus"></i></button>
+                        <a href="#" class="btn button card__a" aria-label="ir a compra">COMPRAR</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 discos__col">
+                <div class="card animation right" id="card3">
+                    <img src="img/album_envivo.webp" class="card-img-top card__img" alt="album concierto en vivo">
+                    <div class="card-body card__content">
+                      <h5 class="card-title card__h5">$580 MXN</h5>
+                      <p class="card-text card__p">2013 - 23 canciones, 1 hr 32 minutos</p>
+                    </div>
+                    <div class="card-body card__buttons">
+                        <button class="card__button" aria-label="ver mas"><i class="fa-regular fa-square-plus"></i></button>
+                        <a href="#" class="btn button card__a" aria-label="ir a compra">COMPRAR</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- seccion merch -->
+<section class="merch" id="merch">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 ">
+                <h2 class="merch__h2">MERCH</h2>
+            </div>
+        </div>
+        <div class="row merch__row">
+            <div class="col-12 col-md-12 col-lg-12 ">
+                <div class="card merch__card animation up" id="merchcard1">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-md-12 col-lg-6">
+                        <img src="img/categoria camisetas.webp" class="img-fluid rounded-start merch__img" alt="categoria camisetas reik">
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-6 merch__align">
+                        <div class="card-body ">
+                          <h2 class="merch__h2--card">Camisetas Reik</h2>
+                          <p class="merch__p">¡Lleva contigo el espíritu musical de Reik con nuestras camisetas oficiales!</p>
+                          <a href="#" class="merch__btn" aria-label="ir a categoria">VER MÁS</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 ">
+                <div class="card merch__card animation up" id="merchcard2">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-md-12 col-lg-6 order-lg-2">
+                        <img src="img/categoria pegatinas.webp" class="img-fluid rounded-start merch__img" alt="categoria pegatinas reik">
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-6 order-lg-1 merch__align">
+                        <div class="card-body">
+                          <h2 class="merch__h2--card">Stikers coleccionables</h2>
+                          <p class="merch__p">¡Haz que tu pasión por la música de Reik cobre vida con nuestra exclusiva colección de stickers coleccionables!</p>
+                          <a href="#" class="merch__btn" aria-label="ir a categoria">VER MÁS</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- seccion contacto -->
+<section class="contacto" id="contacto">
+            <div class="contacto__img-content">
+            </div>
+            <div class="contacto__text-content">
+                <div class="contacto__descripcion">
+                    <h2 class="contacto__h2">¿ Te gastaría contratar a Reik ?</h2>
+                    <p class="contacto__p">Puedes dejar tus datos de contacto y uno de nuestros agentes se pondrá en contacto contigo para brindarte información de las contrataciones.</p>
+                </div>
+                <div class="contacto__campos">
+                    <form class="form">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="email" class="form__label">Correo Electrónico:</label>
+                                <input type="email" class="form-control form-control-lg form__input" id="email" placeholder="Ingresa tu correo electrónico">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="nombre" class="form__label">Nombre:</label>
+                                <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="telefono" class="form__label">Teléfono:</label>
+                                <input type="tel" class="form-control form-control-lg" id="telefono" placeholder="Ingresa tu teléfono">
+                                <small id="telefonoHelp" class="form-text text-muted">Por favor, ingresa tu número de teléfono en el formato correcto.</small>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label for="estado" class="form__label">Estado:</label>
+                                <select class="form-control form-control-lg" id="estado">
+                                  <option value="">Seleccione...</option>
+                                  <option value="1">CDMX</option>
+                                  <option value="2">Monterrey</option>
+                                  <option value="3">Guadalajara</option>
+                                </select>
+                            </div> 
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label for="ciudad" class="form__label">Ciudad:</label>
+                                <input type="text" class="form-control form-control-lg" id="ciudad" placeholder="Ingrese su ciudad">
+                            </div>
+                        </div>
+                           
+                        <a type="submit" class="form__btn" aria-label="enviar formulario" href="#">ENVIAR</a>
+                    </form>
+                </div>
+            </div>
+</section>
+<!-- seccion footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 footer__aling">
+                <a href="#" class="footer__logo"><img src="img/logo vector blanco 1.webp" alt="logo grupo reik" class="footer__img"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer__aling">
+                <ul class="footer__ul">
+                    <li class="footer__li"><a href="#" class="footer__a">Inicio</a></li>
+                    <li class="footer__li"><a href="#" class="footer__a">Merch</a></li>
+                    <li class="footer__li"><a href="#" class="footer__a">Discos</a></li>
+                    <li class="footer__li"><a href="#" class="footer__a">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr class="footer__hr">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer__aling">
+                <ul class="footer__ul footer__ul--social">
+                    <li class="footer__li footer__li--social"><a href="https://www.facebook.com/Reik" target="_blank" class="footer__icon"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="footer__li footer__li--social"><a href="https://www.instagram.com/reikmx/" target="_blank" class="footer__icon"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="footer__li footer__li--social"><a href="https://twitter.com/ReikMx" target="_blank" class="footer__icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li class="footer__li footer__li--social"><a href="https://www.youtube.com/channel/UC2rbcd_YR3j_klIv4AXXaZw" target="_blank" class="footer__icon"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer__aling">
+                <span class="footer__span">© 2023 - 2024 | <a href="#" class="footer__a--privacidad">Privacidad</a> - <a href="" class="footer__a--privacidad">Términos</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/animaciones.js"></script>
     
 </body>
 </html>
