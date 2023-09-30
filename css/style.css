@@ -616,6 +616,9 @@ a {
   padding: 8px 12px;
   text-transform: uppercase;
 }
+.footer__a:hover {
+  color: #F7BF53;
+}
 .footer__icon {
   color: #F0F0F0;
   font-size: 40px;
