@@ -293,6 +293,9 @@ a {
     font-size: 14px;
   }
 }
+.hero__span {
+  margin-left: 10px;
+}
 .hero__icon {
   color: #FF0000;
 }
